@@ -1,0 +1,232 @@
+// Mixins //
+@mixin homeBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80vw;
+    padding-top: 20px;
+    grid-gap: 50px; 
+    margin-bottom: 20px;
+
+    img{
+        height: 100%;
+        width: 500px;
+        margin-top: 18px;
+    } 
+    .home_text {
+        width: 600px;
+    }
+
+
+    .button:hover{
+        box-shadow: 2px 4px 5px 1px $main_grey;
+        transition: box-shadow 0.3s ease-in-out;
+        }
+
+}
+
+@mixin homeHeader {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    box-shadow: 1px 3px 5px 1px $main_grey;
+    .header {
+        color: $lt_grey;
+        padding-left: 20px;
+    }
+}
+
+@mixin button {
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 18px;  
+    
+}
+
+$lt_grey: #F0F0F0;
+$main_grey: #9DA7AC;
+$finance: #70D4A4;
+$relationships: #64C0B2;
+$employment: #61BCD6;
+$spirituality: #5AAED5;
+$health: #519FEB;
+
+// Style //
+
+.app-wrapper{
+    display: flex;
+    width: 100vw;
+}
+
+.home_body{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 85px;
+    width: 500px;
+    // align-content: center;
+}
+    
+    .home_mission {
+        height: 500px;
+        @include homeBody;
+
+        .home_mission_photo{
+            margin-top: 18px;
+            height: 100%;
+            width: 500px;
+            overflow: hidden;
+        }
+
+        .home_mission_photo img{
+            margin: -100px 0px -200px 0px;
+        }
+
+        .home_mission_text {
+            align-content: left;
+        }
+    } 
+
+.home_finance {
+    @include homeBody;
+    
+    .home_text {
+        padding-left: 10px;
+    }
+    .home_finance_photo{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .finance_button {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 65px;
+        .button{
+                background-color: $finance;
+                @include button;    
+            }     
+        }
+      }
+
+      .finance_button a{
+          text-decoration: none;
+          color: $lt_grey;
+          font-size: 1.2em;
+      }
+
+.finance_header{
+    margin-top: -60px;
+    @include homeHeader;
+    background-color: $finance;
+}
+
+
+
+.home_relationships {
+    @include homeBody;
+}
+.relationships_header{
+    @include homeHeader;
+    background-color: $relationships;
+}
+.relationships_button {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 65px;
+    .button{
+            background-color: $relationships;
+            @include button;     
+        }     
+    }
+  
+
+  .relationships_button a{
+      text-decoration: none;
+      color: $lt_grey;
+      font-size: 1.2em;
+  }
+
+.home_employment {
+    @include homeBody;
+}
+.employment_header{
+    @include homeHeader;
+    background-color: $employment;
+}
+.employment_button {
+    display: flex;
+    justify-content: flex-end;
+
+    .button{
+            background-color: $employment;
+            @include button;   
+        }     
+    }
+  
+  .employment_button a{
+      text-decoration: none;
+      color: $lt_grey;
+      font-size: 1.2em;
+  }
+  .home_employment_photo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home_spirituality {
+    @include homeBody;
+}
+.spirituality_header{
+    @include homeHeader;
+    background-color: $spirituality;
+}
+.spirituality_button {
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 65px;
+    .button{
+            background-color: $spirituality;
+            @include button;    
+        }     
+    }
+  
+
+  .spirituality_button a{
+      text-decoration: none;
+      color: $lt_grey;
+      font-size: 1.2em;
+  }
+
+.home_health {
+    @include homeBody;
+}
+.health_header{
+    @include homeHeader;
+    background-color: $health;
+}
+.health_button {
+    display: flex;
+    justify-content: flex-end;
+
+    .button{
+            background-color: $health;
+            @include button;     
+        }     
+    }
+  
+  .health_button a{
+      text-decoration: none;
+      color: $lt_grey;
+      font-size: 1.2em;
+  }
+  .home_employment_photo{
+    display: flex;
+    justify-content: flex-end;
+}
+  .home_health_photo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+

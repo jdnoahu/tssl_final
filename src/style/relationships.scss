@@ -1,0 +1,49 @@
+.pillars_body_wrapper{
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    // padding-left: -100px;
+    margin-left: -50px;
+    width: 500px;
+}
+
+.relationships_pillar_color_bar{
+    height: 40px;
+    background-color: $relationships;
+    box-shadow: 1px 3px 5px 1px $main_grey;
+}
+
+.left_arrow_wrapper{
+    display: flex;
+    position: relative;
+    padding-top: 660px;
+    justify-items: center;
+    float: left;
+    color: $main_grey;
+}
+
+.left_arrow_container{
+    width: 200px;
+    display: grid;
+    justify-items: center;
+}
+
+.left_arrow{
+    display: grid;
+    justify-content: left;
+    font-size: 4em;
+}
+.left_arrow a:hover{
+    color: $finance;
+    transition: ease-in .5s;
+}
+
+.left_arrow_text{
+    display: grid;
+    justify-content: left;
+    font-size: 2em;
+}
+
+.left_arrow_container a{
+    color: $main_grey;
+    text-decoration: none;
+}

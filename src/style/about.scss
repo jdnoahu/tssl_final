@@ -1,0 +1,79 @@
+$lt_grey: #F0F0F0;
+$main_grey: #9DA7AC;
+$finance: #70D4A4;
+$relationships: #64C0B2;
+$employment: #61BCD6;
+$spirituality: #5AAED5;
+$health: #519FEB;
+
+
+
+.about_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+
+}
+
+.about_body{
+    justify-items: center;
+    width: 80vw;
+    padding-left: 170px;
+    padding-right: 84px;
+}
+
+.page_title {
+    display: flex;
+    justify-content: center;
+    color: $lt_grey;
+    font-size: 40px;
+    margin-top: -70px;
+}
+
+.about_section_one{
+    display: flex;
+    height: 500px;
+    @include homeBody;
+    justify-items: center;
+}
+
+.about_image_one{
+    margin-top: 18px;
+    height: 100%;
+    width: 500px;
+    overflow: hidden;
+}
+
+.about_image_one img{
+    margin: -100px 0px -200px 0px;
+}
+
+.about_text_two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: -50px;
+
+}
+
+.about_image_two{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.about_image_two img{
+    height: 500px;
+    width: 100%;
+    // margin: 100px 0px -200px 0px;
+}
+
+.about_text_three{
+    width: 80vw;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}

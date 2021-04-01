@@ -1,0 +1,30 @@
+.auth_page{
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+}
+
+.auth_page_wrapper{   
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 500px;
+        @include homeBody;
+        justify-items: center; 
+        margin-top: 100px;  
+        margin-left: 200px;
+        justify-content: center;
+        background-color: $main_grey;
+}
+
+.left_column{
+    margin-top: -10px;
+    height: 100%;
+    width: 650px;
+    background-size: cover;
+}
+
+.right_column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}

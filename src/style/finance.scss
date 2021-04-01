@@ -1,0 +1,120 @@
+.pillar_body_wrapper{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 100px;
+    width: 500px;
+}
+
+.pillar_color_bar{
+    height: 40px;
+    background-color: $finance;
+    box-shadow: 1px 3px 5px 1px $main_grey;
+}
+
+.pillar_section_one {
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    @include homeBody;
+
+    .pillar_section_one_image{
+        display: grid;
+        grid-gap: 10px;
+        margin-top: 18px;
+        height: 100%;
+        width: 500px;
+        overflow: hidden;
+    }
+    .pillar_text_one {
+        align-content: left;
+    }
+}
+
+.right_arrow_wrapper{
+    display: flex;
+    // position: relative;
+    padding-top: 650px;
+    justify-items: center;
+    float: right;
+    color: $main_grey;
+}
+
+.right_arrow_container{
+    width: 200px;
+    display: grid;
+    justify-items: center;
+}
+
+.right_arrow{
+    display: grid;
+    justify-content: right;
+    font-size: 4em;
+}
+.right_arrow a:hover{
+    color: $finance;
+    transition: ease-in .5s;
+}
+
+.right_arrow_text{
+    display: grid;
+    justify-content: right;
+    font-size: 2em;
+}
+
+.right_arrow_container a{
+    color: $main_grey;
+    text-decoration: none;
+}
+
+.pillar_section_one_image{
+    display: flex;
+    justify-self: center;
+    margin-top: 18px;
+    height: 100%;
+    width: 500px;
+    overflow: hidden;
+
+.pillar_section_one_image img{
+    margin: -100px 0px -200px 0px;
+}
+}
+
+.pillar_section_two{
+    padding-left: 70px;
+    width: 1290px;
+}
+
+.pillar_blog_section{
+    display: grid;
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 25px;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.pillar_preview_container{
+    width: 250px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.pillar_preview_image{
+    width: 250px;
+    height: 250px;
+}
+
+.pillar_preview_title{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.pillar_preview_description{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;   
+}

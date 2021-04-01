@@ -1,0 +1,33 @@
+.blog_preview_wrapper{
+    display: grid;
+    justify-items: center;
+    margin-top: 50px;
+    margin-left: 170px;
+    width: 80vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.blog_preview_container{
+    width: 250px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.blog_preview_image{
+    width: 250px;
+    height: 250px;
+}
+
+.blog_preview_title{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.blog_preview_description{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;   
+}

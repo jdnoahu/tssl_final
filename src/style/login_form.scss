@@ -1,0 +1,60 @@
+.login_page_forms {
+    display: flex;
+    margin-top: 18px;
+    width: 1290px;
+}
+
+.login_form_wrapper{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 580px;
+    height: 600px;
+    border: solid $main_grey 1px;
+    background-color: white;
+    margin-left: 100px;
+}
+
+.form_header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.form_entry_container{
+    display: grid;
+    width: 580px;
+    justify-items: center;
+}
+
+.form_entry{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 350px;
+    height: 50px;
+    margin-bottom: 50px;
+
+}
+
+.submit_btn{
+    display: flex;
+    justify-content: center;          
+}
+
+.submit_btn button{
+    background-color: $finance;
+    height: 40px;
+    width: 80px;
+    color: $lt_grey;
+    border: solid 1px $main_grey;
+}
+
+.submit_btn button:hover{
+        box-shadow: 2px 4px 5px 1px $main_grey;
+        transition: box-shadow 0.3s ease-in-out;
+}
+
+
+

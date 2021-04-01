@@ -1,0 +1,46 @@
+.contact_form_wrapper{
+    justify-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1280px;
+    height: 1200px;
+    border: solid $main_grey 1px;
+    background-color: white;
+    margin-left: 200px;
+}
+
+.contract_form_entry_container{
+    margin-top: -200px;
+    display: grid;
+    width: 900px;
+    justify-items: center;
+    align-items: center;
+    border: solid 3px $main_grey;
+}
+
+.contact_form_entry{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 550px;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.contact_message_entry{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 550px;
+    height: 500px;
+    margin-bottom: 50px;
+
+}
+
+.contact_message{
+
+    text-align: left;
+    vertical-align: top;
+    padding-bottom: 450px;
+}
