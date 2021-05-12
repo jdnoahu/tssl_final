@@ -25,7 +25,7 @@ export default function Member() {
             if (value !== null) {
                 valueCurrentUser = value;
                 
-                axios.get("https://tssl-backend.herokuapp.com//members",
+                axios.get("https://tssl-backend.herokuapp.com/members",
 
                     { withCredentials: false }
                 ).then(response => {
