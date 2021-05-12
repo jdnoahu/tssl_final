@@ -39,7 +39,7 @@ export default class NewMemberForm extends Component {
     }
 
     handleSubmit(event) {
-        axios.post("http://127.0.0.1:5000/member",
+        axios.post("https://tssl-backend.herokuapp.com/member",
             {
                 member: {
                     first_name: this.state.first_name,
