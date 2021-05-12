@@ -17,7 +17,7 @@ export default function Blog() {
       }, [])
 
     function getBlogs() {
-        axios.get("http://127.0.0.1:5000/blogs",
+        axios.get("https://tssl-backend.herokuapp.com/blogs",
 
             { withCredentials: false }
         ).then(response => {
