@@ -23,7 +23,7 @@ export default class AdminAuth extends Component {
     }
 
     handleSubmit(event) {
-        axios.get("http://127.0.0.1:5000/admins"
+        axios.get("https://tssl-backend.herokuapp.com/admins"
             ,{ withCredentials: false }
         ).then(response => {
             console.log("response", response);
